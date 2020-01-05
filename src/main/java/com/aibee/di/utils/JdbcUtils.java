@@ -8,7 +8,7 @@ public class JdbcUtils {
         Connection conn = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/aibee_di", "root", "cui123");
+            conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/xxx", "root", "xxx");
         }catch(Exception e){
             System.out.println("获取连接对象失败.");
             e.printStackTrace();
