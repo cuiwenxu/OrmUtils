@@ -1,0 +1,5 @@
+com/aibee/di/utils/OrmUtils.class
+com/aibee/di/model/Id.class
+com/aibee/di/model/Table.class
+com/aibee/di/model/Column.class
+com/aibee/di/utils/JdbcUtils.class

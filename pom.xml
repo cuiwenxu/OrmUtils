@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.aibee.di</groupId>
+    <artifactId>OrmUtils</artifactId>
+    <version>1.0.1</version>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.44</version>
+        </dependency>
+    </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <!--id必须和pom中的保持一致-->
+            <id>releases</id>
+            <name>nexus releases</name>
+            <url>http://nexus.aibee.cn:8090/repository/dataplatform-bi-release/</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>nexus snapshots</name>
+            <url>http://nexus.aibee.cn:8090/repository/dataplatform-bi-snapshot/</url>
+        </snapshotRepository>
+    </distributionManagement>
+    <!-- 定义下载的私服地址 -->
+    <repositories>
+        <repository>
+            <id>AibeeRepository</id>
+            <name>Nexus Repository</name>
+            <url>http://nexus.aibee.cn:8090/repository/DataPlatform/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+</project>
